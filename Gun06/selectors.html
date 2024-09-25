@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* class*/
+        .favori {
+            border-left: 10px solid#007AFF;
+        }
+
+        /* id */
+        #memleket {
+            text-align: center;
+        }
+
+        #memleket::after {
+            content: "(otopark)";
+            font-weight: bold;
+
+        }
+
+        div>p {
+            margin: 0 70px;
+            text-align: justify;
+            font-size: 80%;
+        }
+
+        h1,
+        h2 {
+            background-color: black;
+            color: white;
+        }
+
+        /* attribute */
+        [title] {
+            background-color: yellow;
+        }
+
+        li[title] {
+            font-style: italic;
+        }
+
+        li:nth-child(odd) {
+            background-color: rgb(67, 107, 143);
+        }
+
+        h2+p {
+            text-indent: 40px;
+        }
+
+        /* 6.çocuk nasıl seçilir*/
+
+        li:nth-child(6) {
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px red;
+            color: rgb(77, 42, 158);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Türkiye</h1>
+    <h2>Kütahya</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fuga assumenda ex vitae quae nihil exercitationem
+        dignissimos totam. Delectus, atque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ut eius. Quae magni facere rem obcaecati
+        accusamus quod consectetur? Ad minus praesentium sint dicta modi aperiam mollitia molestiae repellat natus.</p>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto labore earum voluptatem voluptatibus
+            sequi, aliquam dolores cupiditate laborum ipsum tempora corrupti delectus minus maiores eos animi magni
+            eveniet qui! Quos.
+        </p>
+    </div>
+    <h3>İlçeleri</h3>
+    <ul>
+        <li>merkez</li>
+        <li>altıntaş</li>
+        <li>aslanapa</li>
+        <li title="dikkat antik kent içerir">çavdarhisar</li>
+        <li class="favori">domaniç</li>
+        <li class="favori">dumlupınar</li>
+        <li>emet</li>
+        <li>gediz</li>
+        <li>hisarcık</li>
+        <li>simav</li>
+        <li>şaphane</li>
+        <li id="memleket" class="favori">tavşanlı</li>
+    </ul>
+</body>
+
+</html>

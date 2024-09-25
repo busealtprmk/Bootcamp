@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sözde element</title>
+    <style>
+        html {
+            font-size: 24px;
+
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        p::first-letter {
+            font-size: 3em;
+            /* yüzde 300*/
+            float: left;
+            line-height: .75;
+            font-weight: bold;
+        }
+
+        p::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        p::first-line {
+            text-decoration: underline;
+        }
+
+        main {
+
+            max-width: 900px;
+            /*       y  x  ekseni*/
+            margin: 0 auto;
+            background-color: rgb(60, 120, 189);
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            padding: 36px;
+            border-radius: 10px;
+            box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+            background: #fffef0;
+            ;
+        }
+
+        @media (max-widht:720px) {
+            main {
+                margin: 40px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolore nobis? Commodi sequi autem adipisci
+            qui,
+            aut libero voluptatibus vero labore, quisquam, veritatis delectus. Consequatur laborum eligendi delectus
+            doloribus hic.</p>
+        <p>Ex quasi iure sed, temporibus soluta quisquam, dolore aspernatur facere possimus obcaecati adipisci vero!
+            Atque
+            quos ex tenetur error, eius sunt adipisci incidunt est quia saepe veritatis obcaecati. Fugit, nemo?</p>
+        <p>Unde soluta delectus nisi nesciunt, ratione libero dignissimos iste quia, optio aliquam exercitationem aut
+            iusto
+            quas iure sint voluptatibus esse impedit ab molestiae. Architecto iure, natus at pariatur perspiciatis
+            numquam.
+        </p>
+        <p>Libero neque quis vero consectetur doloremque error velit dicta numquam ea aliquid, at sed repellat fuga
+            beatae
+            illo, rerum culpa magni nobis eos blanditiis laborum sit quo repellendus explicabo! Saepe.</p>
+    </main>
+
+</body>
+
+</html>

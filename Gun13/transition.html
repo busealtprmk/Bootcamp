@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        .kutu1 {
+            height: 60px;
+            width: 20%;
+            background-color: crimson;
+            margin-bottom: .5rem;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: steps(4);
+            transition-delay: .3s;
+        }
+
+
+        .kutu1:hover {
+            height: 180px;
+            background-color: rgb(95, 95, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kutu1"></div>
+    <div class="kutu1"></div>
+    <div class="kutu1"></div>
+    <div class="kutu1"></div>
+</body>
+
+</html>

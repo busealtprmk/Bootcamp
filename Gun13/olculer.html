@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ölçü birimleri</title>
+    <style>
+        html {
+            font-size: ;
+        }
+
+        .cubuk1 {
+            height: 20px;
+            background-color: purple;
+            width: 96px;
+        }
+
+        .cubuk2 {
+            height: 20px;
+            background-color: pink;
+            width: 6rem;
+        }
+
+        .cubuk3 {
+            height: 20px;
+            background-color: rgb(129, 10, 30);
+            width: 6rem;
+        }
+
+        .cubuk2-tasiyici {
+            font-size: 10px;
+        }
+
+        .cubuk3-tasiyici {
+            font-size: 10px;
+        }
+
+        .soru1 {
+            font-size: 4px;
+        }
+
+        .soru1-a {
+            font-size: 1.5em;
+        }
+
+        .soru1-b {
+            font-size: 1.5em;
+        }
+
+        .soru1-c {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- /* 1px ekrandaki en ufak nokta(mobil cihazlarda cihaza göre ölçekleme sağlamak için viewport meta tagı kullanılır ve px hesaplaması 2-3 noktaya karşılık gelecek şekilde hesaplanabilir.)
+        1rem:"html" kök elementinin font-size değeridir. Birçok tarayıcıda html elementi 16px varsayılan bir font değerine sahiptir.
+        1em: Bir elementin parent'ından miras aldığı font-size'ına karşılık gelir.
+                                           */ -->
+    <h1>Ölçü birimleri</h1>
+    <h2>genişliği 96px olan bir div</h2>
+    <div class="cubuk1"></div>
+    <h2>genişliği 6rem olan bir div</h2>
+    <div class="cubuk2-tasiyici">
+        <div class="cubuk2"></div>
+    </div>
+    <div class="cubuk3-tasiyici">
+        <h2>genişliği 6em olan bir div</h2>
+        <div class="cubuk3"></div>
+    </div>
+    <hr>
+    <div class="soru1">
+        <div class="soru1-a">
+            <div class="soru1-b">
+                <div class="soru1-c">
+                    <!-- hesaplanmış font size!ı kaç pikseldir: 13.5 ( 4.1.5) -->
+                    SORU1: MOLA YAKLAŞIYOR
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+
+</html>
